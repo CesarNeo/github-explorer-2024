@@ -1,7 +1,4 @@
+import { render } from "react-dom"
 import App from "./app"
 
-function Main() {
-  return <App />;
-}
-
-export default Main;
+render(<App />, document.getElementById("root"))
