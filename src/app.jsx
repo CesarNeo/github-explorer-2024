@@ -1,6 +1,6 @@
-function App() {
-  throw new Error('I crashed!');
+import './styles/global.css'
 
+function App() {
   return (
     <div>
       Hello world!
