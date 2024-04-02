@@ -1,9 +1,9 @@
-import './styles/global.css'
+import './styles/global.scss'
 
 function App() {
   return (
     <div>
-      Hello world!
+     <h1> Hello world!</h1>
     </div>
   );
 }
