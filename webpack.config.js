@@ -11,6 +11,11 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    }
+  },
   module: {
     rules: [
       {
