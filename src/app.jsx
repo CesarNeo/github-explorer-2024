@@ -1,11 +1,9 @@
 import './styles/global.scss'
 
+import RepositoryList from './components/repository-list'
+
 function App() {
-  return (
-    <div>
-     <h1> Hello world!</h1>
-    </div>
-  );
+  return <RepositoryList />
 }
 
-export default App;
+export default App
