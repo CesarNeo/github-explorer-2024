@@ -1,7 +1,14 @@
 import { useEffect, useState } from 'react'
 
+interface Repository {
+  id: number
+  name: string
+  description: string
+  html_url: string
+}
+
 function useRepositories() {
-  const [repositories, setRepositories] = useState([])
+  const [repositories, setRepositories] = useState<Repository[]>([])
 
   useEffect(() => {
     ;(async () => {
