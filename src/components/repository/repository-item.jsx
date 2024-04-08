@@ -1,10 +1,12 @@
 function RepositoryItem({ repository }) {
   return (
     <li>
-      <strong>{repository}</strong>
-      <p>Forms in React</p>
+      <strong>{repository.name}</strong>
+      <p>{repository.description}</p>
 
-      <a href="">Acessar repositório no Github</a>
+      <a href={repository.html_url} target="_blank" rel="noreferrer">
+        Acessar repositório no Github
+      </a>
     </li>
   )
 }
