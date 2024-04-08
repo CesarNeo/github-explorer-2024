@@ -1,3 +1,5 @@
+import RepositoryItem from './repository-item'
+
 function RepositoryList() {
   return (
     <section className="repository-list">
@@ -5,12 +7,7 @@ function RepositoryList() {
 
       <ul>
         {Array.from({ length: 10 }, (_, index) => (
-          <li key={index}>
-            <strong>unform</strong>
-            <p>Forms in React</p>
-
-            <a href="">Acessar repositório no Github</a>
-          </li>
+          <RepositoryItem key={index} repository={index} />
         ))}
       </ul>
     </section>
